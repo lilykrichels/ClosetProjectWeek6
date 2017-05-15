@@ -4,63 +4,65 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<h2>Accessory</h2>
 
 <div>
-    <h4>Accessory</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
+    <h4>Item Details</h4>
 
-        <dd>
-            @Html.DisplayFor(model => model.Name)
-        </dd>
+    <div class="table-bordered">
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Photo)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Name)
+            </dd>
 
-        <dd>
-          <img src="@Html.DisplayFor(model => model.Photo)"/>
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Photo)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Type)
-        </dt>
+            <dd>
+                <img src="@Html.DisplayFor(model => model.Photo)" />
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Type)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Type)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Color)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Type)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Color)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Color)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Season)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Color)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Season)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Season)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Occasion)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Season)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Occasion)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Occasion)
+            </dt>
 
-    </dl>
+            <dd>
+                @Html.DisplayFor(model => model.Occasion)
+            </dd>
+
+        </dl>
+    </div>
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.AccessoryID }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Back to All Accesories", "Index")
 </p>

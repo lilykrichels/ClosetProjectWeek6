@@ -3,7 +3,7 @@
     padding-bottom: 20px;
     background-image: url(http://cdn.wallpapersafari.com/52/4/CEPhKM.jpg);
     background-size: 100%;
-   
+    font-family:Candara;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -29,6 +29,7 @@ textarea {
 .jumbotron{
     background-image: url(https://wallpaperscraft.com/image/fur_bright_pet_rug_18429_602x339.jpg);
     background-size: 100%;
+    text-align:center;
 }
 
 .table img{
@@ -41,4 +42,21 @@ textarea {
 
 .dl-horizontal img{
     width: 300px;
+}
+
+.dl-horizontal{
+}
+
+.carouselRow{
+    background-color:lightblue;
+    text-align:center;
+    margin-top:-75px;
+}
+
+.navBar{
+    color:aliceblue;
+}
+
+.detailsView{
+    background-color: lightblue;
 }
