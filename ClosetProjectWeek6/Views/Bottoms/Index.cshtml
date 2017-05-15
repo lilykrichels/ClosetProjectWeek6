@@ -10,7 +10,7 @@
 
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    <button> @Html.ActionLink("Create New", "Create")</button>
 </p>
 <table class="table table-hover">
     <tr>
@@ -56,10 +56,10 @@
             @Html.DisplayFor(modelItem => item.Occasion)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.BottomID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.BottomID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.BottomID })
-        </td>
+            <button> @Html.ActionLink("Edit", "Edit", new { id = item.BottomID })</button>
+            <button> @Html.ActionLink("Details", "Details", new { id = item.BottomID }) </button>
+            <button> @Html.ActionLink("Delete", "Delete", new { id = item.BottomID })</button>
+</td>
     </tr>
 }
 

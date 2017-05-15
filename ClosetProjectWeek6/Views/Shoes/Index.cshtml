@@ -10,7 +10,7 @@
  into the photo index in the view to display as an image. That way links to photos can just be dropped in. *@ 
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    <button> @Html.ActionLink("Create New", "Create")</button>
 </p>
 <table class="table table-hover">
     <tr>
@@ -56,9 +56,9 @@
             @Html.DisplayFor(modelItem => item.Occasion)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ShoeID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ShoeID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ShoeID })
+            <button> @Html.ActionLink("Edit", "Edit", new { id = item.ShoeID })</button> 
+            <button> @Html.ActionLink("Details", "Details", new { id=item.ShoeID }) </button>
+            <button> @Html.ActionLink("Delete", "Delete", new { id = item.ShoeID }) </button>
         </td>
     </tr>
 }

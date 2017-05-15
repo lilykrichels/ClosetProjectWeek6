@@ -3,7 +3,7 @@
     padding-bottom: 20px;
     background-image: url(http://cdn.wallpapersafari.com/52/4/CEPhKM.jpg);
     background-size: 100%;
-    font-family:Candara;
+    font-family: 'Righteous', cursive;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -36,12 +36,16 @@ textarea {
     width: 100px;
 }
 
-.detailsImg{
+/*.detailsImg{
     width: 100px;
-}
+}*/
 
-.dl-horizontal img{
-    width: 300px;
+.detailsImg{
+    float:right;
+}
+.detailsImg img{
+    width:200px;
+
 }
 
 .dl-horizontal{
@@ -57,6 +61,23 @@ textarea {
     color:aliceblue;
 }
 
+.detailsSideL{
+    position: absolute;
+}
+
+
 .detailsView{
     background-color: lightblue;
+    
+}
+
+h1, h2, h3, h4{
+    font-family: 'Lobster', cursive;
+}
+
+.img {
+    border: 1px solid #ddd; /* Gray border */
+    border-radius: 4px;  /* Rounded border */
+    padding: 5px; /* Some padding */
+    width: 150px; /* Set a small width */
 }
