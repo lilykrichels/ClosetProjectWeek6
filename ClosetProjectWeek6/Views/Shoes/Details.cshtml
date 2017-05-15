@@ -4,6 +4,9 @@
     ViewBag.Title = "Details";
 }
 
+@* In each Deatails file I change the formatting and layout of the stardard shape by adding rows to float the
+    image and text left and right. I also added classes so that I could format the image and the test. Finally I remomved the
+    "@Html.DisplayNameFor each model to clean it up a big" *@
 <h2>Shoes</h2>
 
     <h4>Item Details</h4>
@@ -16,45 +19,22 @@
     <div class="row detailsRow">
     <div class="col-md-8">
             <dl class="dl-horizontal detailsSideL">
-                @*<dt>
-                    @Html.DisplayNameFor(model => model.Name)
-                </dt>*@
 
                 <dd>
                     @Html.DisplayFor(model => model.Name)
                 </dd>
 
-                @*<dt>
-                    @Html.DisplayNameFor(model => model.Photo)
-                </dt>*@
-
-                @*<dt>
-                    @Html.DisplayNameFor(model => model.Type)
-                </dt>*@
-
                 <dd>
                     @Html.DisplayFor(model => model.Type)
                 </dd>
-
-                @*<dt>
-                    @Html.DisplayNameFor(model => model.Color)
-                </dt>*@
 
                 <dd>
                     @Html.DisplayFor(model => model.Color)
                 </dd>
 
-                @*<dt>
-                    @Html.DisplayNameFor(model => model.Season)
-                </dt>*@
-
                 <dd>
                     @Html.DisplayFor(model => model.Season)
                 </dd>
-
-                @*<dt>
-                    @Html.DisplayNameFor(model => model.Occasion)
-                </dt>*@
 
                 <dd>
                     @Html.DisplayFor(model => model.Occasion)

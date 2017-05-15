@@ -4,16 +4,14 @@
     ViewBag.Title = "Create";
 }
 
-<h2>Create</h2>
+<h2>Add New Bottoms</h2>
 
 
 @using (Html.BeginForm()) 
 {
     @Html.AntiForgeryToken()
     
-    <div class="form-horizontal">
-        <h4>Bottom</h4>
-        <hr />
+    <div class="form-horizontal createPage">
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
             @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
@@ -70,9 +68,9 @@
         </div>
     </div>
 }
-
+ <hr />
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    <button> @Html.ActionLink("Back to List", "Index")</button>
 </div>
 
 @section Scripts {
