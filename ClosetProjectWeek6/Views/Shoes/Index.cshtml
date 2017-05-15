@@ -12,7 +12,28 @@
 <p>
     <button> @Html.ActionLink("Create New", "Create")</button>
 </p>
-<table class="table table-hover">
+
+<div class="row">
+    <div class="container-fluid reviewsHome">
+        @foreach (var item in Model)
+        {
+            //here we are editing a thumbnail to make it work for our patron
+            //the data has been put in the differt <p> and <h> and we have edited the button so it links to details
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    @*<img src="..." alt="...">*@
+                    <div class="caption text-center indexImg">
+                        @*//this centers the text and button*@
+                        <h3>@Html.DisplayFor(modelItem => item.Name)</h3>
+                        <p><img src="@Html.DisplayFor(modelItem => item.Photo)" /> </p>
+                        <p>@Html.ActionLink("Details", "Details", new { id = item.ShoeID }, new { role = "button", @class = "btn btn-primary" })</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+@*<table class="table table-hover">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Name)
@@ -63,4 +84,4 @@
     </tr>
 }
 
-</table>
+</table>*@

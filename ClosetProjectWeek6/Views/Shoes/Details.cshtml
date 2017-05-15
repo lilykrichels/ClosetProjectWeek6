@@ -7,13 +7,18 @@
 <h2>Shoes</h2>
 
     <h4>Item Details</h4>
-    <div class="row">
+
+<p>
+    <button> @Html.ActionLink("Edit", "Edit", new { id = Model.ShoeID }) </button>
+    <button>@Html.ActionLink("Back to List", "Index") </button>
+</p>
+
+    <div class="row detailsRow">
     <div class="col-md-8">
-        <div class="table-bordered">
             <dl class="dl-horizontal detailsSideL">
-                <dt>
+                @*<dt>
                     @Html.DisplayNameFor(model => model.Name)
-                </dt>
+                </dt>*@
 
                 <dd>
                     @Html.DisplayFor(model => model.Name)
@@ -23,33 +28,33 @@
                     @Html.DisplayNameFor(model => model.Photo)
                 </dt>*@
 
-                <dt>
+                @*<dt>
                     @Html.DisplayNameFor(model => model.Type)
-                </dt>
+                </dt>*@
 
                 <dd>
                     @Html.DisplayFor(model => model.Type)
                 </dd>
 
-                <dt>
+                @*<dt>
                     @Html.DisplayNameFor(model => model.Color)
-                </dt>
+                </dt>*@
 
                 <dd>
                     @Html.DisplayFor(model => model.Color)
                 </dd>
 
-                <dt>
+                @*<dt>
                     @Html.DisplayNameFor(model => model.Season)
-                </dt>
+                </dt>*@
 
                 <dd>
                     @Html.DisplayFor(model => model.Season)
                 </dd>
 
-                <dt>
+                @*<dt>
                     @Html.DisplayNameFor(model => model.Occasion)
-                </dt>
+                </dt>*@
 
                 <dd>
                     @Html.DisplayFor(model => model.Occasion)
@@ -60,9 +65,4 @@
             </div>
         </div>
     </div>
-</div>
-            <p>
-                <buttons>@Html.ActionLink("Edit", "Edit", new { id = Model.ShoeID })</buttons> 
-                <buttons>@Html.ActionLink("Back to List", "Index") </buttons> 
-            </p>
 

@@ -8,51 +8,28 @@
 
 <div>
     <h4>Item Details</h4>
-    <div class="row">
-        <div class="col-md-8">
-            <div class="table-bordered">
-                <dl class="dl-horizontal detailsSideL">
-                    <dt>
-                        @Html.DisplayNameFor(model => model.Name)
-                    </dt>
 
+    <p>
+        <button> @Html.ActionLink("Edit", "Edit", new { id = Model.BottomID })</button>
+        <button>@Html.ActionLink("Back to List", "Index") </button>
+    </p>
+
+    <div class="row detailsRow">
+        <div class="col-md-8">
+            
+                <dl class="dl-horizontal detailsSideL">
                     <dd>
                         @Html.DisplayFor(model => model.Name)
                     </dd>
-
-                    @*<dt>
-                            @Html.DisplayNameFor(model => model.Photo)
-                        </dt>*@
-
-
-                    <dt>
-                        @Html.DisplayNameFor(model => model.Type)
-                    </dt>
-
                     <dd>
                         @Html.DisplayFor(model => model.Type)
                     </dd>
-
-                    <dt>
-                        @Html.DisplayNameFor(model => model.Color)
-                    </dt>
-
                     <dd>
                         @Html.DisplayFor(model => model.Color)
                     </dd>
-
-                    <dt>
-                        @Html.DisplayNameFor(model => model.Season)
-                    </dt>
-
                     <dd>
                         @Html.DisplayFor(model => model.Season)
                     </dd>
-
-                    <dt>
-                        @Html.DisplayNameFor(model => model.Occasion)
-                    </dt>
-
                     <dd>
                         @Html.DisplayFor(model => model.Occasion)
                     </dd>
@@ -63,8 +40,5 @@
             </div>
         </div>
     </div>
-</div>
-<p>
-    <button> @Html.ActionLink("Edit", "Edit", new { id = Model.BottomID })</button> 
-    <button>@Html.ActionLink("Back to List", "Index") </button> 
-</p>
+
+

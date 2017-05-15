@@ -32,24 +32,30 @@ textarea {
     text-align:center;
 }
 
-.table img{
-    width: 100px;
+.navBar{
+    background-color: lightblue;
+    font-size:20px;
 }
 
-/*.detailsImg{
+.table img{
     width: 100px;
-}*/
+    border-radius: 25%;
+ 
+}
 
 .detailsImg{
     float:right;
+
 }
 .detailsImg img{
-    width:200px;
-
+    width:300px;
+    border-radius: 25%;   
+    border-style:solid;
+    border-width:thick;
+    border-color: white;
 }
 
-.dl-horizontal{
-}
+
 
 .carouselRow{
     background-color:lightblue;
@@ -57,27 +63,56 @@ textarea {
     margin-top:-75px;
 }
 
-.navBar{
-    color:aliceblue;
-}
-
 .detailsSideL{
     position: absolute;
-}
-
-
-.detailsView{
-    background-color: lightblue;
-    
+    font-size:20px;
+    align-content: flex-start;
+    margin-left: -20px;
+    text-align:center;
 }
 
 h1, h2, h3, h4{
     font-family: 'Lobster', cursive;
 }
 
-.img {
-    border: 1px solid #ddd; /* Gray border */
-    border-radius: 4px;  /* Rounded border */
-    padding: 5px; /* Some padding */
-    width: 150px; /* Set a small width */
+.indexImg img{
+    width: 150px;
+    border-radius: 25px;
+    border-style: solid;
+    border-width:thick;
+    border-color: lightblue;
+
+}
+
+
+.headerContainer{
+    border-radius: 25px;
+    background-color: lightblue;
+    margin-bottom: 20px;
+    width: 50%;
+    border-style: solid;
+    border-width:thick;
+    border-color: white;
+
+}
+
+.homeThumb{
+    background-color:lightblue;
+    margin-top: 10px;
+    border-radius: 25px;
+    text-align:center;
+    border-style: solid;
+    border-width:thick;
+    border-color: white;
+
+}
+
+.detailsRow{
+    background-color:lightblue;
+    border-radius: 25px;
+    border-style:solid;
+    border-width: thick;
+    border-color:white;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }

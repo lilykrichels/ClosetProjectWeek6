@@ -13,9 +13,28 @@
     <button> @Html.ActionLink("Create New", "Create")</button>
 </p>
 
+<div class="row">
+    <div class="container-fluid reviewsHome">
+        @foreach (var item in Model)
+        {
+            //here we are editing a thumbnail to make it work for our patron
+            //the data has been put in the differt <p> and <h> and we have edited the button so it links to details
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    @*<img src="..." alt="...">*@
+                    <div class="caption text-center indexImg">
+                        @*//this centers the text and button*@
+                        <h3>@Html.DisplayFor(modelItem => item.Name)</h3>
+                        <p><img src="@Html.DisplayFor(modelItem => item.Photo)" /> </p>
+                        <p>@Html.ActionLink("Details", "Details", new { id = item.AccessoryID }, new { role = "button", @class = "btn btn-primary" })</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
 
-
-<table class="table table-hover">
+@*<table class="table table-hover">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Name)
@@ -58,16 +77,15 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Occasion)
-            </td>
-
-
+            </td>*@
+        @*</tr>*@
+@*<table>
             <td>
                 <button> @Html.ActionLink("Edit", "Edit", new { id = item.AccessoryID }) </button>
                 <button> @Html.ActionLink("Details", "Details", new { id = item.AccessoryID }) </button>
                 <button> @Html.ActionLink("Delete", "Delete", new { id = item.AccessoryID })</button>   
 
             </td>
-        </tr>
-    }
-
-</table>
+        
+    
+</table>*@

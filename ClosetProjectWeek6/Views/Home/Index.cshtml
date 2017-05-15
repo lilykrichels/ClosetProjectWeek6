@@ -2,30 +2,32 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class = "container-fluid"> 
+<div class="container-fluid">
     <div class="jumbotron">
-        <h1>Fido & Fifi's</h1>
-        <h1>Closet</h1>
+        <div class="container headerContainer">
+            <h1>Fido & Fifi's</h1>
+            <h1>Closet</h1>
+        </div>
         <p class="lead">The only way to organize all of you're pet's clothes and accessories!</p>
         @*<p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>*@
-    </div>   
+    </div>
 </div>
 
-        <!--CAROUSEL-->
+<!--CAROUSEL-->
 
 <div class="container-fluid carouselRow">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         @*<ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>*@
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>*@
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
             <div class="item active">
-                <h2>View All Your Pet's Clothes</h2>               
+                <h2>View All Your Pet's Clothes</h2>
             </div>
 
             <div class="item">
@@ -36,7 +38,7 @@
             </div>
         </div>
 
-        <!-- Left and right controls -->
+        @*Left and right controls*@
         <a class="left carousel-control" href="#myCarousel" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left"></span>
             <span class="sr-only">Previous</span>
@@ -49,13 +51,13 @@
 </div>
 
 
-<div class="row" homeRow>
-    <div class="col-md-3">
+<div class="row homeThumb">
+    <div class="col-md-3 ">
         <h2>Tops</h2>
         <p> Browse all of your pet's tops, including sweaters, harnesses, and t-shirts!</p>
         <p><a class="btn btn-default" href="~/Tops/Index">View Tops &raquo;</a></p>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-3 ">
         <h2>Bottoms</h2>
         <p>Puruse all of your pet's favorite bottoms including pants, skirts and items for those "oops!" moments. </p>
         <p><a class="btn btn-default" href="~/Bottoms/Index">View Bottoms &raquo;</a></p>
